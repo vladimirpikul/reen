@@ -1,0 +1,9 @@
+// All imports in this file will be compiled into vendors.css file.
+//
+// Note: You can import SCSS and CSS files as well.
+
+@import '../../node_modules/normalize.css/normalize.css',
+        '../../node_modules/swiper/dist/css/swiper.min.css',
+        '../../node_modules/slicknav/dist/slicknav.css',
+        '../../node_modules/slick-carousel/slick/slick.css',
+        '../../node_modules/slick-carousel/slick/slick-theme.css';

@@ -1,0 +1,25 @@
+.get-in-touch{
+  .section-title{
+    @media(max-width: 980px){
+      font-size: 40px;
+    }
+    @media(max-width: 480px){
+      font-size: 35px;
+    }
+  }
+
+  .section-text{
+    max-width: 800px;
+    margin: 0 auto 37px;
+    font-size: 22px;
+    line-height: 1.5em;
+    letter-spacing: 0.01em;
+
+    @media(max-width: 980px){
+      font-size: 20px;
+    }
+    @media(max-width: 480px){
+      font-size: 16px;
+    }
+  }
+}

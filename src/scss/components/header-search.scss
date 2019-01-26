@@ -1,0 +1,28 @@
+.header-search{
+  position: relative;
+  margin-left: auto;
+  margin-right: 20px;
+  height: 30px;
+
+  .search-icon{
+    width: 30px;
+    height: 100%;
+    font-size: 12px;
+  }
+
+  .search-input{
+    position: absolute;
+    top: 35px;
+    right: 0;
+    display: none;
+    width: 200px;
+
+    &.show{
+      display: block;
+    }
+  }
+
+  @media(max-width: 980px){
+    margin-right: 60px;
+  }
+}

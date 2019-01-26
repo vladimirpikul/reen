@@ -1,0 +1,10 @@
+body{
+  padding-top: 152px;
+
+  @media(max-width: 980px){
+    padding-top: 122px;
+  }
+  @media(max-width: 480px){
+    padding-top: 92px;
+  }
+}

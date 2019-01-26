@@ -1,0 +1,142 @@
+.our-works-slider-wrap{
+  position: relative;
+  margin-top: 80px;
+
+  .slider-arrow{
+    display: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #c9d2da;
+    border-radius: 3px;
+    bottom: 0;
+    cursor: pointer;
+    
+    .arrow-icon{
+      color: #f5f8f9;
+    }
+
+    &.arrow-left{
+      left: calc(50% - 80px);
+
+      @media(max-width: 767px){
+        left: calc(50% - 100px);
+      }
+    }
+
+    &.arrow-right{
+      right: calc(50% - 80px);
+
+      @media(max-width: 767px){
+        right: calc(50% - 100px);
+      }
+    }
+
+    &:hover{
+      background-color: #506a85;
+
+      .arrow-icon{
+        color: #02ba9c;
+      }
+    }
+  }
+
+  .our-works-slider{
+    margin: 0 -10px;
+    padding-bottom: 70px;
+
+    .our-works-slide{
+      margin: 0 15px;
+      background-color: #00bc9c;
+      cursor: pointer;
+      position: relative;
+
+      .hover-text{
+        width: 100%;
+        display: none;
+        position: absolute;
+        color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      img{
+        width: 100%;
+      }
+
+      &:focus{
+        outline: none;
+      }
+
+      &:hover {
+        img {
+          opacity: 0.1;
+        }
+
+        .hover-text{
+          display: block;
+        }
+      }
+    }
+  }
+
+  .slick-dots{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+
+    li{
+      width: 15px;
+      height: 15px;
+
+      button{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #506a85;
+
+        &:before{
+          display: none;
+        }
+
+        @media(max-width: 1280px){
+          width: 10px;
+          height: 10px;
+        }
+      }
+
+      &.slick-active{
+        button{
+          background-color: #00bc9c;
+        }
+      }
+
+      @media(max-width: 1280px){
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+
+  @media(min-width: 768px){
+    &:hover{
+      .slider-arrow{
+        display: block;
+      }
+    }
+  }
+
+  @media(max-width: 767px){
+    margin-top: 4%;
+
+    .our-works-slider{
+      padding-bottom: calc(6% + 25px);
+    }
+  }
+}
