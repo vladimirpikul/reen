@@ -6,5 +6,4 @@ module.exports = [
   './node_modules/jquery/dist/jquery.js',
   './node_modules/swiper/dist/js/swiper.min.js',
   './node_modules/slick-carousel/slick/slick.min.js',
-  './node_modules/slicknav/dist/jquery.slicknav.min.js',
 ];
