@@ -1,0 +1,70 @@
+.header-row{
+  background-color: $headerRowBg;
+  border-bottom: 1px solid #e6e9ed;
+
+  .header-row-wrap{
+    height: 40px;
+    font-size: 12px;
+
+    @media(max-width: 480px){
+      justify-content: flex-end;
+      height: 30px;
+    }
+  }
+
+  .header-contacts{
+    .contact-item{
+      & + .contact-item{
+        margin-left: 25px;
+      }
+
+      .text{
+        margin-left: 5px;
+      }
+
+      &:hover{
+        color: #eb6397;
+      }
+    }
+
+    @media(max-width: 480px){
+      display: none;
+    }
+  }
+
+  .header-social{
+    @extend %listreset;
+    height: 100%;
+
+    .item{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 100%;
+
+      &:hover{
+        color: #fff;
+      }
+    }
+
+    .facebook-item:hover{
+      background-color: #4668b3;
+    }
+    .google-plus-item:hover{
+      background-color: #de5745;
+    }
+    .twitter-item:hover{
+      background-color: #2fbbed;
+    }
+    .pinterest-item:hover{
+      background-color: #d94348;
+    }
+    .behance-item:hover{
+      background-color: #3079ff;
+    }
+    .dribbble-item:hover{
+      background-color: #eb6397;
+    }
+  }
+}

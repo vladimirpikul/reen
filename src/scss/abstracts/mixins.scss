@@ -285,16 +285,3 @@ $animation-speed: 0.3s !default;
   font-size: $pxSize;
   font-size: ($pxSize / 10px) + rem;
 }
-
-// ul/ol margings, paddings and list-styles reset
-// usage
-// selector {
-//     @include list-res;
-//     or @include list-res(20px 30px);
-//     or @include list-res(20px 30px, 40px, square outside);
-//
-@mixin list-res($margin: 0, $padding: 0, $list-style: none) {
-  margin: $margin;
-  padding: $padding;
-  list-style: $list-style;
-}
