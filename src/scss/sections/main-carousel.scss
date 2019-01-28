@@ -248,8 +248,7 @@
     }
   }
 
-  .carousel-arrow{
-    display: none;
+  .carousel-arrow, .carousel-arrow:focus{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -272,13 +271,7 @@
       right: 2%;
     }
 
-    &:focus{
-      color: #00bc9c;
-      opacity: 0.25;
-    }
-
     &:hover{
-      color: #00bc9c;
       opacity: 1;
     }
 
@@ -295,7 +288,6 @@
   }
 
   .carousel-indicators{
-    display: none;
     background-color: #fff;
     width: fit-content;
     padding: 13px 15px;
@@ -304,6 +296,17 @@
     left: 50%;
     transform: translateX(-50%);
     transition: none;
+
+    @media(max-width: 1280px){
+      padding: 10px 12px;
+    }
+    @media(max-width: 767px){
+      display: block;
+    }
+    @media(max-width: 600px){
+      bottom: -2px;
+      padding: 1px 10px;
+    }
 
     .swiper-pagination-bullet{
       width: 15px;
@@ -320,29 +323,10 @@
         height: 10px;
       }
     }
-
-    @media(max-width: 1280px){
-      padding: 10px 12px;
-    }
-    @media(max-width: 767px){
-      display: block;
-    }
-    @media(max-width: 600px){
-      bottom: -2px;
-      padding: 1px 10px;
-    }
   }
 
   @media(max-width: 600px){
     background-color: #506a85;
     padding-bottom: 50%;
-  }
-
-  @media(min-width: 768px){
-    &:hover{
-      .carousel-arrow, .carousel-indicators{
-        display: block;
-      }
-    }
   }
 }

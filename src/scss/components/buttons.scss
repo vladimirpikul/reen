@@ -13,6 +13,12 @@ button{
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
+  padding: 17px 30px;
+
+  @media(max-width: 980px){
+    padding: 15px 20px;
+    font-size: 14px;
+  }
 
   &.btn-big{
     padding: 23px 70px;
@@ -31,15 +37,6 @@ button{
     @media(max-width: 480px){
       padding: 8px 12px;
       font-size: 12px;
-    }
-  }
-
-  &.btn-normal{
-    padding: 17px 30px;
-
-    @media(max-width: 980px){
-      padding: 15px 20px;
-      font-size: 14px;
     }
   }
 

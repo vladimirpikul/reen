@@ -1,6 +1,6 @@
 const headerShrink = () => {
   // Header shrink on scroll
-  $(window).scroll(function () {
+  $(window).scroll(() => {
     if ($(this).scrollTop() > 110) {
       $('.main-header').addClass('shrinked');
     } else {

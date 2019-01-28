@@ -1,4 +1,4 @@
-const ourWorksSlider = (function () {
+const ourWorksSlider = (() => {
   $('.our-works-slider').slick({
     arrows: false,
     initialSlide: 4,

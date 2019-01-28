@@ -4,10 +4,18 @@
   margin-right: 20px;
   height: 30px;
 
+  @media(max-width: 980px){
+    margin-right: 0;
+  }
+
   .search-icon{
     width: 30px;
     height: 100%;
     font-size: 12px;
+
+    @media(max-width: 980px){
+      font-size: 14px;
+    }
   }
 
   .search-input{
@@ -20,9 +28,5 @@
     &.show{
       display: block;
     }
-  }
-
-  @media(max-width: 980px){
-    margin-right: 0;
   }
 }
