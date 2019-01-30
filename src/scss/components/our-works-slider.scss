@@ -3,7 +3,6 @@
   margin-top: 80px;
 
   .slider-arrow{
-    display: none;
     position: absolute;
     width: 30px;
     height: 30px;
@@ -12,6 +11,10 @@
     border-radius: 3px;
     bottom: 0;
     cursor: pointer;
+
+    @media(max-width: 767px){
+      display: none;
+    }
     
     .arrow-icon{
       color: #f5f8f9;
@@ -101,13 +104,13 @@
         border-radius: 50%;
         background-color: #506a85;
 
-        &:before{
-          display: none;
-        }
-
         @media(max-width: 1280px){
           width: 10px;
           height: 10px;
+        }
+
+        &:before{
+          display: none;
         }
       }
 
@@ -120,14 +123,6 @@
       @media(max-width: 1280px){
         width: 10px;
         height: 10px;
-      }
-    }
-  }
-
-  @media(min-width: 768px){
-    &:hover{
-      .slider-arrow{
-        display: block;
       }
     }
   }

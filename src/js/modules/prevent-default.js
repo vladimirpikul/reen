@@ -1,8 +1,6 @@
 const preventDef = () => {
-  // Prevent default on click on header menu item
-  $('#header-menu .dropdown-container .header-menu-item').on('click', (e) => {
-    e.preventDefault();
-  });
+  // Prevent default on first click on dropdown header menu items
+  $('#header-menu .dropdown-container .header-menu-item').one('click', false);
 };
 
 export default preventDef;
